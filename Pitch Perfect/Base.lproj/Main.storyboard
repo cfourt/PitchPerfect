@@ -184,12 +184,32 @@
                                     <action selector="stopAudio:" destination="RJK-0c-nbX" eventType="touchUpInside" id="a8m-xM-249"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9d-TD-aIr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="RJK-0c-nbX" eventType="touchUpInside" id="Qfh-bH-HJB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56g-g0-Owu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Vader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="RJK-0c-nbX" eventType="touchUpInside" id="iSE-Je-uX2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zaV-zV-0ZH" firstAttribute="top" secondItem="H9d-TD-aIr" secondAttribute="bottom" constant="183" id="Bzh-zn-FoL"/>
                             <constraint firstItem="s6i-Vu-ME4" firstAttribute="height" secondItem="VHo-Pu-RFx" secondAttribute="height" id="Gxj-rx-nl3">
                                 <variation key="widthClass=compact" constant="40"/>
                             </constraint>
+                            <constraint firstItem="56g-g0-Owu" firstAttribute="leading" secondItem="1yT-7V-L67" secondAttribute="leading" id="LcB-vF-V3l"/>
                             <constraint firstAttribute="centerX" secondItem="s6i-Vu-ME4" secondAttribute="centerX" id="QVZ-Tl-pkg"/>
                             <constraint firstItem="1yT-7V-L67" firstAttribute="top" secondItem="a7m-wb-pf5" secondAttribute="bottom" constant="50" id="Sgu-5r-bUL"/>
                             <constraint firstItem="H5H-v9-2IG" firstAttribute="leading" secondItem="VHo-Pu-RFx" secondAttribute="leadingMargin" constant="15" id="Uda-nU-Kas"/>
@@ -197,22 +217,30 @@
                             <constraint firstItem="s6i-Vu-ME4" firstAttribute="width" secondItem="VHo-Pu-RFx" secondAttribute="height" multiplier="1:15" id="Y90-JV-xkq"/>
                             <constraint firstItem="H5H-v9-2IG" firstAttribute="top" secondItem="a7m-wb-pf5" secondAttribute="bottom" constant="50" id="ZaN-j1-KFR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1yT-7V-L67" secondAttribute="trailing" constant="15" id="aRJ-qI-TiK"/>
+                            <constraint firstItem="H9d-TD-aIr" firstAttribute="leading" secondItem="H5H-v9-2IG" secondAttribute="leading" id="khR-AE-sa7"/>
+                            <constraint firstItem="56g-g0-Owu" firstAttribute="top" secondItem="H9d-TD-aIr" secondAttribute="top" id="qHE-52-vLK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="H5H-v9-2IG"/>
                                 <exclude reference="1yT-7V-L67"/>
                                 <exclude reference="s6i-Vu-ME4"/>
+                                <exclude reference="H9d-TD-aIr"/>
+                                <exclude reference="56g-g0-Owu"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="XPx-GF-LJQ"/>
-                                <exclude reference="Sgu-5r-bUL"/>
-                                <exclude reference="aRJ-qI-TiK"/>
                                 <exclude reference="Uda-nU-Kas"/>
                                 <exclude reference="ZaN-j1-KFR"/>
+                                <exclude reference="Sgu-5r-bUL"/>
+                                <exclude reference="aRJ-qI-TiK"/>
+                                <exclude reference="khR-AE-sa7"/>
+                                <exclude reference="LcB-vF-V3l"/>
+                                <exclude reference="qHE-52-vLK"/>
                                 <exclude reference="Gxj-rx-nl3"/>
                                 <exclude reference="QVZ-Tl-pkg"/>
                                 <exclude reference="Y90-JV-xkq"/>
+                                <exclude reference="Bzh-zn-FoL"/>
+                                <exclude reference="XPx-GF-LJQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -220,16 +248,22 @@
                                 <include reference="H5H-v9-2IG"/>
                                 <include reference="1yT-7V-L67"/>
                                 <include reference="s6i-Vu-ME4"/>
+                                <include reference="H9d-TD-aIr"/>
+                                <include reference="56g-g0-Owu"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="XPx-GF-LJQ"/>
-                                <include reference="Sgu-5r-bUL"/>
-                                <include reference="aRJ-qI-TiK"/>
                                 <include reference="Uda-nU-Kas"/>
                                 <include reference="ZaN-j1-KFR"/>
+                                <include reference="Sgu-5r-bUL"/>
+                                <include reference="aRJ-qI-TiK"/>
+                                <include reference="khR-AE-sa7"/>
+                                <include reference="LcB-vF-V3l"/>
+                                <include reference="qHE-52-vLK"/>
                                 <exclude reference="Gxj-rx-nl3"/>
                                 <include reference="QVZ-Tl-pkg"/>
                                 <exclude reference="Y90-JV-xkq"/>
+                                <include reference="Bzh-zn-FoL"/>
+                                <include reference="XPx-GF-LJQ"/>
                             </mask>
                         </variation>
                     </view>
@@ -261,9 +295,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chipmunk" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Rabbit" width="100" height="100"/>
         <image name="Snail" width="100" height="100"/>
         <image name="Stop" width="100" height="100"/>
+        <image name="Vader" width="100" height="100"/>
     </resources>
 </document>
